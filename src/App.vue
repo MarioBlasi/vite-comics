@@ -9,18 +9,16 @@ export default {};
       <div class="row-top" id="box">
         <div class="col-8">lorem</div>
         <div class="col-4">
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-          </ul>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
+          <a class="nav-link" href="">contact</a>
         </div>
       </div>
     </div>
@@ -28,7 +26,7 @@ export default {};
   <!-- nav top level -->
   <div class="navMedium-level">
     <div class="container-medium">
-      <div class="row-medium">
+      <div class="row-medium" id="boxDue">
         <div class="col">
           <h1>- ->Content goes here -</h1>
         </div>
@@ -40,11 +38,19 @@ export default {};
     <div class="container-bottom">
       <div class="row-bottom" id="boxTre">
         <div class="col">
-          <span>sono bottom</span>
-          <span>sono bottom</span>
-          <span>sono bottom</span>
-          <span>sono bottom</span>
-          <span>sono bottom</span>
+          <div class="product">lorem</div>
+        </div>
+        <div class="col">
+          <div class="product">lorem</div>
+        </div>
+        <div class="col">
+          <div class="product">lorem</div>
+        </div>
+        <div class="col">
+          <div class="product">lorem</div>
+        </div>
+        <div class="col">
+          <div class="product">lorem</div>
         </div>
       </div>
     </div>
@@ -88,25 +94,15 @@ export default {};
         </div>
         <hr />
         <div class="col-6f">
+          <div>
+            <a href=""> <h3>FOLLOW US</h3> </a>
+          </div>
           <div class="social">
-            <h4>lorem</h4>
-            <ul>
-              <li>
-                <a href="">Instagram <i class="fa fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="">Google <i class="fa fa-google"></i></a>
-              </li>
-              <li>
-                <a href="">Facebook <i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="">Google <i class="fa fa-google"></i></a>
-              </li>
-              <li>
-                <a href="">Facebook <i class="fa fa-facebook"></i></a>
-              </li>
-            </ul>
+            <a href="">Instagram <i class="fa fa fa-instagram"></i></a>
+            <a href="">Instagram <i class="fa fa fa-instagram"></i></a>
+            <a href="">Instagram <i class="fa fa fa-instagram"></i></a>
+            <a href="">Instagram <i class="fa fa fa-instagram"></i></a>
+            <a href="">Instagram <i class="fa fa fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -118,6 +114,7 @@ export default {};
 
 <style lang="scss" scoped>
 .navTop-level {
+  height: 7rem;
 }
 #box {
   display: flex;
@@ -130,44 +127,57 @@ export default {};
 .col-4 {
   display: flex;
   background-color: aqua;
+  a {
+    padding: 0.5rem;
+  }
 }
-// nav top
-.row-medium {
+// nav -----end------top
+#boxDue {
   display: flex;
-  justify-content: start;
-  height: 8rem;
-}
-// nav medium
-#boxTre {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  background-color: rgb(223, 169, 215);
-  height: 9rem;
+  text-align: center;
 }
-
-//  nav bottom
 .navMedium-level {
   background-color: rgb(208, 235, 183);
+  height: 7rem;
 }
+// nav -----end------medium
 .navBottom-level {
-  background-color: rgb(177, 62, 133);
+  height: 7rem;
+  background-color: rgb(202, 154, 184);
 }
-// nav * 3
+#boxTre {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  .product {
+    padding: 0.5rem 1rem;
+  }
+}
+// // nav -----end------bottom
 main {
   background-color: rgb(81, 177, 62);
 }
+// Main---------
 footer {
-  background-color: rgba(39, 44, 38, 0.466);
+  background-color: rgba(7, 115, 134, 0.466);
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  height: 7rem;
 }
+
 .row-bottom {
   display: flex;
   flex-direction: row;
 }
 .col-6f {
   background-color: aqua;
+  text-align: center;
+  display: flex;
+
+  .product {
+    padding: 1rem 1rem;
+  }
 }
 </style>
 <!-- CSS ----------------->
