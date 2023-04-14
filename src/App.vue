@@ -1,5 +1,5 @@
 <script>
-import SiteHeader from "../../vite-comics/src/components/SiteHeader.vue";
+import SiteHeader from "./components/SiteHeader.vue";
 export default {
   components: {
     SiteHeader,
@@ -16,11 +16,75 @@ export default {
   <SiteMain></SiteMain>
   <SiteFooter></SiteFooter> -->
   <SiteHeader></SiteHeader>
-  <main></main>
+  <main>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam
+      consequuntur harum, deserunt quae eos delectus. Quibusdam voluptatum
+      praesentium quis veritatis consequatur, voluptates eius quam commodi! Quia
+      architecto saepe atque? Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Rem aliquam consequuntur harum, deserunt quae eos delectus.
+      Quibusdam voluptatum praesentium quis veritatis consequatur, voluptates
+      eius quam commodi! Quia architecto saepe atque?
+    </div>
+
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img
+              height="60"
+              src="./assets/img/buy-comics-digital-comics.png"
+              alt=""
+            />
+            <span class="text-uppercase">Digital Comics</span>
+          </div>
+          <div class="col">
+            <img
+              height="60"
+              src="./assets/img/buy-comics-merchandise.png"
+              alt=""
+            />
+            <span class="text-uppercase">DC merchandise</span>
+          </div>
+          <div class="col">
+            <img
+              height="60"
+              src="./assets/img/buy-comics-subscriptions.png"
+              alt=""
+            />
+            <span class="text-uppercase">comic shop locator</span>
+          </div>
+          <div class="col">
+            <img
+              height="60"
+              src="./assets/img/buy-comics-shop-locator.png"
+              alt=""
+            />
+            <span class="text-uppercase">Dc power visa</span>
+          </div>
+          <div class="col">
+            <img height="50" src="./assets/img/buy-dc-power-visa.svg" alt="" />
+            <span class="text-uppercase">Digital Comics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <footer></footer>
 </template>
 <!-- HTML ---------------->
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@use "./assets/scss/partials/variables" as *;
+@use "./assets/scss/app.scss";
+main {
+  background-color: $dark_nav_color;
+  color: $light_nav_color;
+  .banner {
+    height: 100px;
+    background-color: $blue_nav_color;
+  }
+}
+</style>
 <!-- CSS ----------------->
