@@ -1,8 +1,10 @@
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
+import SiteMain from "./components/SiteMain.vue";
 export default {
   components: {
     SiteHeader,
+    SiteMain,
   },
   data() {
     return {};
@@ -32,7 +34,7 @@ export default {
         <div class="row">
           <div class="col">
             <img
-              height="60"
+              height="50"
               src="./assets/img/buy-comics-digital-comics.png"
               alt=""
             />
@@ -40,7 +42,7 @@ export default {
           </div>
           <div class="col">
             <img
-              height="60"
+              height="50"
               src="./assets/img/buy-comics-merchandise.png"
               alt=""
             />
@@ -48,23 +50,23 @@ export default {
           </div>
           <div class="col">
             <img
-              height="60"
+              height="50"
               src="./assets/img/buy-comics-subscriptions.png"
+              alt=""
+            />
+            <span class="text-uppercase">Subscription</span>
+          </div>
+          <div class="col">
+            <img
+              height="50"
+              src="./assets/img/buy-comics-shop-locator.png"
               alt=""
             />
             <span class="text-uppercase">comic shop locator</span>
           </div>
           <div class="col">
-            <img
-              height="60"
-              src="./assets/img/buy-comics-shop-locator.png"
-              alt=""
-            />
-            <span class="text-uppercase">Dc power visa</span>
-          </div>
-          <div class="col">
-            <img height="50" src="./assets/img/buy-dc-power-visa.svg" alt="" />
-            <span class="text-uppercase">Digital Comics</span>
+            <img height="40" src="./assets/img/buy-dc-power-visa.svg" alt="" />
+            <span class="text-uppercase">dc power visa</span>
           </div>
         </div>
       </div>
@@ -78,12 +80,18 @@ export default {
 <style lang="scss">
 @use "./assets/scss/partials/variables" as *;
 @use "./assets/scss/app.scss";
+
 main {
   background-color: $dark_nav_color;
   color: $light_nav_color;
+  img,
+  span {
+    padding: 5px;
+  }
   .banner {
     height: 100px;
     background-color: $blue_nav_color;
+    padding: 1.5rem;
   }
 }
 </style>
