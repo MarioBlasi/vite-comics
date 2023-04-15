@@ -2,7 +2,60 @@
 export default {
   name: "SiteHeader",
   data() {
-    return {};
+    return {
+      menu: [
+        {
+          text: "Characters",
+          href: "#",
+          current_page: true,
+        },
+        {
+          text: "Comics",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "Movies",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "Tv",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "Games",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "Collectibles",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "Videos",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "Fans",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "News",
+          href: "#",
+          current_page: false,
+        },
+        {
+          text: "Shop",
+          href: "#",
+          current_page: false,
+        },
+      ],
+    };
   },
 };
 </script>
@@ -29,37 +82,8 @@ export default {
         </button>
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >CHARACTERS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">COMICS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">MOVIES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">GAMES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">COLLECTIBLES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">VIDEOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FANS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NEWS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SHddddOP</a>
+            <li class="nav-item" v-for="item in menu">
+              <a class="nav-link active" :href="item.href">{{ item.text }}</a>
             </li>
           </ul>
         </div>
@@ -68,5 +92,5 @@ export default {
   </header>
 </template>
 <!-- HTML----------------->
-<style lang="scss" scoped></style>
+<style lang="scss"></style>
 <!-- CSS ----------------->

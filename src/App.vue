@@ -1,10 +1,14 @@
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
-import SiteMain from "./components/SiteMain.vue";
+// import BanneVue from "./components/BannerVue.vue";
+// import SiteMain from "./components/SiteMain.vue";
+// import SiteFooter from "./components/SiteFooter.vue";
 export default {
   components: {
     SiteHeader,
-    SiteMain,
+
+    // SiteMain,
+    // SiteFooter,
   },
   data() {
     return {};
@@ -14,19 +18,21 @@ export default {
 <!-- JS ---------------->
 
 <template>
-  <!-- 
-  <SiteMain></SiteMain>
-  <SiteFooter></SiteFooter> -->
   <SiteHeader></SiteHeader>
+  <SiteMain></SiteMain>
+  <SiteFooter></SiteFooter>
   <main>
     <div class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam
-      consequuntur harum, deserunt quae eos delectus. Quibusdam voluptatum
-      praesentium quis veritatis consequatur, voluptates eius quam commodi! Quia
-      architecto saepe atque? Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Rem aliquam consequuntur harum, deserunt quae eos delectus.
-      Quibusdam voluptatum praesentium quis veritatis consequatur, voluptates
-      eius quam commodi! Quia architecto saepe atque?
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam
+        commodi! Quia architecto saepe atque? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Rem aliquam consequuntur harum, deserunt
+        quae eos delectus. Quibusdam voluptatum praesentium quis veritatis
+        consequatur, voluptates eius quam commodi! Quia architecto saepe atque?
+        consectetur adipisicing elit. Rem aliquam consequuntur harum, deserunt
+        quae eos delectus. Quibusdam voluptatum praesentium quis veritatis
+        consequatur, voluptates eius quam commodi! Quia architecto saepe atque?
+      </p>
     </div>
 
     <div class="banner">
@@ -73,7 +79,86 @@ export default {
     </div>
   </main>
 
-  <footer></footer>
+  <footer>
+    <div class="top">
+      <div class="container">
+        <div class="row" id="logo">
+          <div class="col-2">
+            <div class="item">
+              <h4>DC COMICS</h4>
+              <ul>
+                <li><a href="">drghd</a></li>
+                <li><a href="">pasergftadio</a></li>
+                <li><a href="">prdrgo wqefrwerdio</a></li>
+                <li><a href="">drghd</a></li>
+                <li><a href="">drghd</a></li>
+              </ul>
+            </div>
+            <div class="item">
+              <h4>SHOP</h4>
+              <ul>
+                <li><a href="">io</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorelorem</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="item">
+              <h4>DC</h4>
+              <ul>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">prwerdio</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorelorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="item">
+              <h4>SITES</h4>
+              <ul>
+                <li><a href="">lorem</a></li>
+                <li><a href="">pqadio</a></li>
+                <li><a href="">lorelorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="logoDc">
+              <img height="450" src="./assets/img/dc-logo-bg.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top -->
+    <div class="bottom">
+      <div class="container d-flex justify-content-between">
+        <button type="button" class="btn btn-outline">
+          <strong>SIGN-UP NOW!</strong>
+        </button>
+
+        <div class="social">
+          <strong class="follow text-uppercase">Follow us</strong>
+          <img src="./assets/img/footer-periscope.png" alt="" />
+          <img src="./assets/img/footer-periscope.png" alt="" />
+          <img src="./assets/img/footer-youtube.png" alt="" />
+          <img src="./assets/img/footer-pinterest.png" alt="" />
+          <img src="./assets/img/footer-periscope.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- top -->
+  </footer>
 </template>
 <!-- HTML ---------------->
 
@@ -89,10 +174,55 @@ main {
     padding: 5px;
   }
   .banner {
-    height: 100px;
+    height: 120px;
     background-color: $blue_nav_color;
-    padding: 1.5rem;
+    padding: 2rem;
   }
 }
+// MAIN
+
+footer {
+  h4 {
+    color: white;
+    text-transform: uppercase;
+  }
+  .top {
+    padding: 1rem;
+    background-image: url(./assets/img/footer-bg.jpg);
+
+    ul {
+      list-style: none;
+      padding: 0;
+      a {
+        color: $light_nav_color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .bottom {
+    height: 120px;
+    background-color: $grey_footer_color;
+    padding: 2rem;
+    .social > img {
+      padding: 0.3rem;
+    }
+    .social > .follow {
+      padding: 0.8rem;
+    }
+    .follow {
+      color: $blue_nav_color;
+      font-size: large;
+    }
+    .btn {
+      border: 3px solid $blue_nav_color;
+      height: 3rem;
+      width: 10rem;
+      background-color: $grey_footer_color;
+      color: white;
+    }
+  }
+}
+//
 </style>
 <!-- CSS ----------------->
